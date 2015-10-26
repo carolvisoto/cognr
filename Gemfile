@@ -9,9 +9,13 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'carrierwave-aws'
 gem 'devise'
+gem 'simple_form'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
+end
+group :production do
+  gem 'pg'
 end
 
