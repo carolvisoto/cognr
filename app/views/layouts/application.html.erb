@@ -10,17 +10,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <%= yield %>
+</br>
   <p class="notice"><%= notice %></p>
   <p class="alert"><%= alert %></p>
-  <%= yield %>
   <br/>
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
        <div class="container">
           <a class="brand" href="/">Cognr</a>
-      <!--     <ul class="nav">
-            <li class="active"><a href="/ideas">Ideas</a></li>
-          </ul> -->
           <p class="navbar-text pull-right">
             <% if user_signed_in? %>
               Logged in as <strong><%= current_user.email %></strong>.

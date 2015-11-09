@@ -10,6 +10,8 @@ gem 'jbuilder', '~> 2.0'
 gem 'carrierwave-aws'
 gem 'devise'
 gem 'simple_form'
+gem 'omniauth'
+gem 'omniauth-facebook'
 gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'web-console', '~> 2.0'
@@ -18,4 +20,3 @@ end
 group :production do
   gem 'pg'
 end
-
