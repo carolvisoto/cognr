@@ -81,17 +81,15 @@ Rails.application.configure do
     config.action_mailer.perform_deliveries = true
     config.action_mailer.raise_delivery_errors = true
     config.action_mailer.delivery_method = :smtp
+    config.action_mailer.default_url_options = { host: 'cognr.herokuapp.com' }
     config.action_mailer.smtp_settings = {
       address: ENV["EMAIL_ADDRESS"],
       port: ENV["EMAIL_PORT"],
-      domain: ENV["EMAIL_DOMAIN"],
+      authentication: :plain,
       user_name: ENV["EMAIL_USERNAME"],
       password: ENV["EMAIL_PASSWORD"],
-      authentication: :login,
-      ssl: true,
-      tls: true,
+      domain: ENV["EMAIL_DOMAIN"],
       enable_starttls_auto: true
     }
-    config.action_mailer.default_url_options = { host: 'cognr.herokuapp.com' }
   end
 end
