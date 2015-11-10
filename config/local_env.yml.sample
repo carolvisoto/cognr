@@ -1,0 +1,9 @@
+S3_BUCKET_NAME: cognr.com
+AWS_ACCESS_KEY_ID: key_id
+AWS_SECRET_ACCESS_KEY: secret_access
+AWS_REGION: Sao Paulo
+EMAIL_ADDRESS: smtp.gmail.com
+EMAIL_DOMAIN: gmail.com
+EMAIL_PORT: "587"
+EMAIL_USERNAME: email@email.com
+EMAIL_PASSWORD: email_password
