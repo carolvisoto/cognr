@@ -92,5 +92,6 @@ Rails.application.configure do
       tls: true,
       enable_starttls_auto: true
     }
+    config.action_mailer.default_url_options = { host: 'cognr.herokuapp.com' }
   end
 end
