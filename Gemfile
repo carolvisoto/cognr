@@ -11,6 +11,7 @@ gem 'carrierwave-aws'
 gem 'devise'
 gem 'simple_form'
 gem 'sdoc', '~> 0.4.0', group: :doc
+gem "mini_magick"
 
 group :development, :test do
   gem 'web-console', '~> 2.0'
